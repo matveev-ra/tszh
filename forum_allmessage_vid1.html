@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>форум все сообщения вид-1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/owl.carousel.css" type="text/css"/>       
+	
+
+
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="styles/ie.css" type="text/css"/>
+<![endif]-->
+</head>
+<body>
+
+
+<div class="Main">
+
+  <div class="Tophead">
+    <div class="container">
+      <div class="Logo"><img src="images/logo.png" alt=""></div>
+      <div class="Banner"> </div>
+    </div>
+  </div> 
+
+  <div class="Header">
+    <div class="container">
+      <div class="BlockHidd">
+        <div class="goback">
+            <a href="">В НАЧАЛО</a>
+        </div>
+      </div>
+      
+      <div class="inner">
+        <div class="SearchStreet">
+          <form>
+            <input type="text" placeholder="Введите улицу" value="">
+          </form>
+        </div>
+
+        <div class="str"></div>
+
+        <div class="SearchSite">
+          <form action="/search.asp" name="searchform" id="searchform">
+            <div class="in">
+              <div class="SearchSite_pole">
+                <input type="text" name="search_txt" id="search_txt" placeholder="Поиск по сайту" class="searchInput">
+              </div>
+              <div class="SearchSite_btn">
+                <input type="submit" value="Поиск" class="searchSubmit">
+              </div>
+            </div>
+            <div class="SearchSite_radio">
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">по всему сайту</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">в вопросах-ответах</div>
+              </label>
+              <label class="radio">
+                  <input type="radio" name="mode" />
+                  <div class="radio__text">в этом разделе</div>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <!-- / Header-->
+    
+  <div class="Content container">
+    <div class="Sidebar">
+
+      <div class="Login">
+
+          <div class="Login_Hidden">
+            <div class="Btnlogin">Вход</div>
+            <a class="register" target="_top" href="/register.asp?act=register">Регистрация</a>
+          </div>
+
+          <div class="LoginForma">
+            <form method="post" action="contact-us.html" name="myform">
+              <input type="text" name="login" value="" tabindex="1" placeholder="Имя">
+              <input type="password" name="password" tabindex="2" placeholder="Пароль">
+              <button name="" type="submit">Войти</button>
+
+              <a class="register" target="_top" href="/register.asp?act=register">Регистрация</a>
+
+              <a href="/recall_pwd.asp" class="remember">Напомнить пароль</a>
+            </form>
+          </div>
+
+      </div>
+
+      <div class="Info Info_dnone">
+          <a href="">О проекте</a> / 
+          <a href="">Реклама</a>
+          <a href="">Частые вопросы</a>
+      </div>
+
+
+    </div><!-- / Sidebar-->
+    
+
+    <div class="Iinner_cont">
+
+      <div class="Sitehouse">
+        <div class="Sitehouse_wrap">
+          <a href="">Россия (Московская обл - Подмосковье)</a> / 
+          <a href="">Красногорск</a> / 
+          <a href="">Опалиха</a> / 
+          <a href="">ЖК Опалиха</a>
+        </div>
+      </div>
+
+      <div class="Infopanel">
+        <div class="UrlHouse">
+          <a href="">www.tsj.ru/opaliha</a>
+        </div>
+        <div class="PathHouse">
+            Сайт дома: <a href="">Россия (Московская обл - Подмосковье) / Красногорск / Опалиха / ЖК Опалиха</a>
+        </div>
+      </div>
+
+      <div class="Forum">
+
+        <div class="MenuForum">
+          <a href="" class="red">Новая тема</a> |
+          <a href="">Новое голосование</a> |
+          <a href="" class="red">Оглавление</a> |
+          <a href="">Топ-20 тем</a> |
+          <a href=""> Рейтинг авторов</a> |
+          <a href="">TSJ рекомендует</a>
+        </div>
+
+        <div class="Forum-Hd mb15">Форум: Все обсуждения одним списком</div>
+        
+
+        <div class="Forum-top">
+          <div class="Forum-top__vid">
+            <a href="">Развернуть все обсуждения</a> |
+            <a href="">Показать в виде дерева</a>
+          </div>
+         
+        </div>
+
+        <div class="Viewteam">
+
+            <div class="Viewteam-left">
+              <div class="Viewteam-info">
+                <b>Тем: 873,</b>
+                Тем на странице:
+              </div>
+
+              <select class="Viewteam__page" onchange="submit();" name="pagesize">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+
+            </div>
+
+            <div class="Pagenav">
+                <a href="" class="Pagenav-first">Первая</a> 
+                <span><<</span> 
+                <b>1</b> |
+                <a href="">2</a>|
+                <a href="">4</a>|
+                <a href="">5</a>|
+                <a href="">6</a>|
+                <a href="">7</a>|
+                <a href="">3</a>|
+                <a href="">8</a>|
+                <a href="">9</a>|
+                <a href="">10</a>|
+                <a href="">11</a> 
+                <a href="">>></a> 
+                <a href="" class="Pagenav-last">Последняя</a>
+            </div>
+          
+        </div>
+
+
+         <div class="TableForum2">
+            <div class="TableForum2__hd">
+              <div class="th th1">Тема</div>
+              <div class="th th2">Автор</div>
+              <div class="wrap-th">
+                <div class="wrap-th__in">
+                  <div class="th th3">Ответов</div>
+                  <div class="th th4">Просмотров</div>
+                </div>
+                <div class="th th5">Последнее сообщение</div>
+              </div>
+              <div class="th th6"></div>
+            </div>
+            <div class="TableForum2__body">
+              <div class="tr">
+                <div class="td td1">
+                  <div class="in">
+                    <div class="th-hidd">Тема</div>
+                    <a href="">Протокол заседания членов Правления №4 от 30.11.2020</a>
+                    <span>Форум: Правление ТСЖ</span>
+                  </div>
+                </div>
+                <div class="td td2">
+                  <div class="in">
+                    <div class="th-hidd">Автор</div>
+                    <a href="">ТСЖ "Курганская-3"</a>
+                    <span>IP-hash: 83ac05ef8</span>
+                  </div>
+                </div>
+                <div class="wrap-td">
+                  <div class="wrap-td__in">
+                    <div class="td td3">
+                      <div class="in">
+                        <div class="th-hidd">Ответов</div>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="td td4">
+                      <div class="in">
+                        <div class="th-hidd">Просмотров</div>
+                        <span>151</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td5">
+                    <div class="in">
+                      <div class="th-hidd">Последнее сообщение</div>
+                      <span>19 ноября 2020 г. 14:56:19</span>
+                      <span>от <a href="">ТСЖ "Курганская-3"</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="td td6">
+                  <div class="in">
+                    <a href=""><img src="images/icon-link.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td td1">
+                  <div class="in">
+                    <div class="th-hidd">Тема</div>
+                    <a href="">Протокол заседания членов Правления №4 от 30.11.2020</a>
+                    <span>Форум: Правление ТСЖ</span>
+                  </div>
+                </div>
+                <div class="td td2">
+                  <div class="in">
+                    <div class="th-hidd">Автор</div>
+                    <a href="">ТСЖ "Курганская-3"</a>
+                    <span>IP-hash: 83ac05ef8</span>
+                  </div>
+                </div>
+                <div class="wrap-td">
+                  <div class="wrap-td__in">
+                    <div class="td td3">
+                      <div class="in">
+                        <div class="th-hidd">Ответов</div>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="td td4">
+                      <div class="in">
+                        <div class="th-hidd">Просмотров</div>
+                        <span>151</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td5">
+                    <div class="in">
+                      <div class="th-hidd">Последнее сообщение</div>
+                      <span>19 ноября 2020 г. 14:56:19</span>
+                      <span>от <a href="">ТСЖ "Курганская-3"</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="td td6">
+                  <div class="in">
+                    <a href=""><img src="images/icon-link.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td td1">
+                  <div class="in">
+                    <div class="th-hidd">Тема</div>
+                    <a href="">Протокол заседания членов Правления №4 от 30.11.2020</a>
+                    <span>Форум: Правление ТСЖ</span>
+                  </div>
+                </div>
+                <div class="td td2">
+                  <div class="in">
+                    <div class="th-hidd">Автор</div>
+                    <a href="">ТСЖ "Курганская-3"</a>
+                    <span>IP-hash: 83ac05ef8</span>
+                  </div>
+                </div>
+                <div class="wrap-td">
+                  <div class="wrap-td__in">
+                    <div class="td td3">
+                      <div class="in">
+                        <div class="th-hidd">Ответов</div>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="td td4">
+                      <div class="in">
+                        <div class="th-hidd">Просмотров</div>
+                        <span>151</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td5">
+                    <div class="in">
+                      <div class="th-hidd">Последнее сообщение</div>
+                      <span>19 ноября 2020 г. 14:56:19</span>
+                      <span>от <a href="">ТСЖ "Курганская-3"</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="td td6">
+                  <div class="in">
+                    <a href=""><img src="images/icon-link.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td td1">
+                  <div class="in">
+                    <div class="th-hidd">Тема</div>
+                    <a href="">Протокол заседания членов Правления №4 от 30.11.2020</a>
+                    <span>Форум: Правление ТСЖ</span>
+                  </div>
+                </div>
+                <div class="td td2">
+                  <div class="in">
+                    <div class="th-hidd">Автор</div>
+                    <a href="">ТСЖ "Курганская-3"</a>
+                    <span>IP-hash: 83ac05ef8</span>
+                  </div>
+                </div>
+                <div class="wrap-td">
+                  <div class="wrap-td__in">
+                    <div class="td td3">
+                      <div class="in">
+                        <div class="th-hidd">Ответов</div>
+                        <span>0</span>
+                      </div>
+                    </div>
+                    <div class="td td4">
+                      <div class="in">
+                        <div class="th-hidd">Просмотров</div>
+                        <span>151</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td5">
+                    <div class="in">
+                      <div class="th-hidd">Последнее сообщение</div>
+                      <span>19 ноября 2020 г. 14:56:19</span>
+                      <span>от <a href="">ТСЖ "Курганская-3"</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="td td6">
+                  <div class="in">
+                    <a href=""><img src="images/icon-link.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+          
+         <div class="Forum-bottom">
+            <div class="Viewteam-info mb15">
+                <b>Тем: 873,</b> страница <b>1</b> из <b>88</b>
+            </div>
+            <div class="Pagenav mb15">
+                <a href="" class="Pagenav-first">Первая</a> 
+                <span><<</span> 
+                <b>1</b> |
+                <a href="">2</a>|
+                <a href="">4</a>|
+                <a href="">5</a>|
+                <a href="">6</a>|
+                <a href="">7</a>|
+                <a href="">3</a>|
+                <a href="">8</a>|
+                <a href="">9</a>|
+                <a href="">10</a>|
+                <a href="">11</a> 
+                <a href="">>></a> 
+                <a href="" class="Pagenav-last">Последняя</a>
+            </div>
+          </div>
+        
+
+
+
+
+       
+
+        <div class="rssfeed">
+            <a href="">Подпишитесь на веб-канал этого раздела:</a>
+            <span class="rss">
+                <img src="images/img-rss.png" alt="">
+            </span>
+            <a href="" class="what">(Что это?)</a>
+
+            <a href="" class="print">Версия для печати</a>
+        </div>
+
+      </div>
+      <!--/Forum -->
+
+
+
+    
+
+
+
+
+    </div> 
+
+  </div>
+  <!-- /Content-->
+
+  <div class="Footer ">
+    <div class="container">
+      <div class="Logofoot">
+        <img src="images/logo-gold.png" alt="">
+      </div>
+      <div class="txt">
+        <span>+18.</span> Цитирование материалов - только со ссылкой на www.tsj.ru © 2003-2017. <span>E-Mail: info@tsj.ru,
+          reklama@tsj.ru</span> <br />
+        <a href=""> Регламент сайта www.tsj.ru.</a> Редакция не несет ответственности за высказывания участников cообщества на
+        всех страницах сайта.<br />
+        <a href="">Реклама на сайте.</a> Рекламная служба: +7(495) 798-46-99
+      </div>
+    </div>
+  </div>
+  <!-- /Footer-->
+
+</div>
+<!-- /Main-->
+
+
+
+<!-- JS -->
+
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Регистрация</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/owl.carousel.css" type="text/css"/>       
+	
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="styles/ie.css" type="text/css"/>
+<![endif]-->
+</head>
+<body>
+
+
+<div class="Main">
+
+  <div class="Tophead">
+    <div class="container">
+      <div class="Logo"><img src="images/logo.png" alt=""></div>
+      <div class="Banner"> </div>
+    </div>
+  </div> 
+
+  <div class="Header">
+    <div class="container">
+      <div class="BlockHidd"></div>
+      
+      <div class="inner">
+        <div class="SearchStreet">
+          <form>
+            <input type="text" placeholder="Введите улицу" value="">
+          </form>
+        </div>
+
+        <div class="str"></div>
+
+        <div class="SearchSite">
+          <form action="/search.asp" name="searchform" id="searchform">
+            <div class="in">
+              <div class="SearchSite_pole">
+                <input type="text" name="search_txt" id="search_txt" placeholder="Поиск по сайту" class="searchInput">
+              </div>
+              <div class="SearchSite_btn">
+                <input type="submit" value="Поиск" class="searchSubmit">
+              </div>
+            </div>
+            <div class="SearchSite_radio">
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">по всему сайту</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">в вопросах-ответах</div>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+  </div><!-- / Header-->
+    
+  <div class="Content container">
+    <div class="Sidebar">
+
+
+
+
+      <div class="IfRegistr">
+        <div class="txt">
+            Если вы уже ранее
+            регистрировались мы
+            можем напомнить
+            вам пароль
+        </div>
+        <a href="/recall_pwd.asp" class="remember">Напомнить пароль</a>
+      </div>
+
+      <div class="Info">
+          <a href="">О проекте</a> / 
+          <a href="">Реклама</a>
+          <a href="">Частые вопросы</a>
+      </div>
+
+
+    </div><!-- / Sidebar-->
+    
+    <div class="Iinner_cont BG-Regist">
+      <div class="Registration">
+
+        <div class="hd">Регистрация</div>
+        <div class="desc">
+            Вы находитесь на странице регистрации ТСЖ.ру. Сюда приходят те, кто заинтересован в благоустройстве своего подъезда, дома и микрорайона.
+        </div>
+
+        <div class="Form-rigistr">
+            <form method="post" action=""  name="" >
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name=""   value="" placeholder="E-mail" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name=""  placeholder="Имя"  value="" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name="" placeholder="Фамилия"   value="" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name="" placeholder="Псевдоним на сайте"  value="" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name="tema" placeholder="Пароль"  value="" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                  <input  type="text" name="tema" placeholder="Подтверждение пароля"  value="" />
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole pselect">
+                    <select id="day" >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <select id="month" >
+                      <option value="1">Январь</option>
+                      <option value="2">Февраль</option>
+                      <option value="3">Март</option>
+                      <option value="4">Апрель</option>
+                      <option value="5">Май</option>
+                      <option value="6">Июнь</option>
+                      <option value="7">Июль</option>
+                      <option value="8">Август</option>
+                      <option value="9">Сентябрь</option>
+                      <option value="10">Октябрь</option>
+                      <option value="11">Ноябрь</option>
+                      <option value="12">Декабрь</option>
+                    </select>
+                    <select id="year" >
+                      <option value="1">2021</option>
+                      <option value="2">2022</option>
+                      <option value="3">2023</option>
+                      <option value="4">2024</option>
+                      <option value="5">2025</option>
+                    </select>
+               
+              </div>
+            </div>  
+            <div class="e">
+              
+              <div class="pole">
+                <input type="text" name="tema" placeholder="Мобильный телефон"  value="" />
+              </div>
+            </div>
+            <div class="e">
+              
+              <div class="pole">
+                  <textarea cols="40" rows="10" name="message" placeholder="О себе" value=""></textarea>
+                  <div class="checkbox">
+                   <input class="check" type="checkbox" name="checkbox" value="Согласие" required=""  checked="checked"/>
+
+                   <div class="txt">Получать избранные публикации раз в 2 недели</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="e">
+              <div class="text">
+                  Контрольный вопрос <span>*</span>
+              </div>
+              <div class="pole capcha">
+                <input type="text" name="tema" value="" />
+                <div class="img-capcha">
+                  <img src="images/capcha.png" alt="">
+                </div>
+                <div class="txt">
+                  Если не можете прочитать код, щелкните по нему мышью.
+                </div>
+                <div class="btn-submit">
+                  <button name="" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+
+                <div class="prim">
+                  * Обязательное поле для заполнения
+                </div>
+              </div>
+            </div>
+          </form>  
+        </div><!--/Form-rigistr -->
+
+        <div class="text-forma">
+          <p>
+            <b>ВНИМАНИЕ!</b> Не допускается создание домов по выдуманным адресам. В случаях, когда наши модераторы обнаруживают отсутствие жилых строений по созданному адресу (нпр. при помощи служб Карты.Яндекс, Карты.Гугл, Wikimapia), регистрация пользователя может быть удалена.
+          </p>
+
+          <p>
+            Продолжение Вами процедуры регистрации на текущей странице означает Ваше согласие со следующими положениями: Вы можете принимать или не принимать к сведению информацию, указанную на страницах , исключительно по Вашему усмотрению. Редакция не несет ответственности за высказывания участников cообщества на всех страницах сайта.
+          </p>
+          
+          <p>
+            Если вы находите, что какое-либо сообщение несет признаки нарушения действующего законодательства РФ, вам необходимо воспользоваться ссылкой "Пожаловаться администратору" рядом с текстом такого сообщения, и/или адресом info@tsj.ru, и изложить Вашу позицию. Модераторы сайта рассмотрят каждую претензию в индивидуальном порядке и примут аргументированное решение.
+          </p>
+          
+          <p>
+            Сообщения отражают точку зрения только автора, но не администрации сайта, соответственно только автор несет ответственность за их содержание.
+          </p>
+        </div>
+
+
+      </div><!--/Registration -->
+    </div> 
+  </div>
+
+
+  <div class="Footer ">
+    <div class="container">
+      <div class="Logofoot">
+        <img src="images/logo-gold.png" alt="">
+      </div>
+      <div class="txt">
+        <span>+18.</span> Цитирование материалов - только со ссылкой на www.tsj.ru © 2003-2017. <span>E-Mail: info@tsj.ru,
+          reklama@tsj.ru</span> <br />
+        <a href=""> Регламент сайта www.tsj.ru.</a> Редакция не несет ответственности за высказывания участников cообщества на
+        всех страницах сайта.<br />
+        <a href="">Реклама на сайте.</a> Рекламная служба: +7(495) 798-46-99
+      </div>
+    </div>
+  </div>
+
+</div><!-- /Main-->
+
+
+
+<!-- JS -->
+
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
