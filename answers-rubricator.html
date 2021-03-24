@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Список ответов с рубрикатором</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/layout.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/owl.carousel.css" type="text/css"/>       
+	
+
+
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="styles/ie.css" type="text/css"/>
+<![endif]-->
+</head>
+<body>
+
+
+<div class="Main">
+
+  <div class="Tophead">
+    <div class="container">
+      <div class="Logo"><img src="images/logo.png" alt=""></div>
+      <div class="Banner"> </div>
+    </div>
+  </div> 
+
+  <div class="Header">
+    <div class="container">
+      <div class="BlockHidd">
+          <div class="goback">
+              <a href="">В НАЧАЛО</a>
+          </div>
+      </div>
+      
+      <div class="inner">
+        <div class="SearchStreet">
+          <form>
+            <input type="text" placeholder="Введите улицу" value="">
+          </form>
+        </div>
+
+        <div class="str"></div>
+
+        <div class="SearchSite">
+          <form action="/search.asp" name="searchform" id="searchform">
+            <div class="in">
+              <div class="SearchSite_pole">
+                <input type="text" name="search_txt" id="search_txt" placeholder="Поиск по сайту" class="searchInput">
+              </div>
+              <div class="SearchSite_btn">
+                <input type="submit" value="Поиск" class="searchSubmit">
+              </div>
+            </div>
+            <div class="SearchSite_radio">
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">по всему сайту</div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="mode" />
+                <div class="radio__text">в вопросах-ответах</div>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+  </div><!-- / Header-->
+    
+  <div class="Content container">
+    <div class="Sidebar Sidebar-mypage">
+
+      <div class="Myinfo">
+
+        <div class="MyAvatar">
+          <div class="img">
+            <img src="images/avatar4.png" alt="">
+          </div>
+          <a href="">Сменить фото</a>
+        </div>
+
+        <a href="" class="Mypage">МОЯ СТРАНИЦА</a>
+
+        <div class="MyUsername">
+            Имя пользователя
+            <span>username</span>
+        </div>
+
+        <div class="MyStatus">
+          Статус: Пользователь
+        </div>
+
+        <div class="MyAdress">
+          <b>Адреса прописки на сайте:</b>
+          <span>Опалиха, ЖК Опалиха</span>
+        </div>
+
+        <div class="MyMessage">
+          <a href="">Мои сообщения (1)</a>
+        </div>
+
+        <div class="Logout">
+          <a href="">Выйти из аккаунта</a>
+        </div>
+      </div>
+
+      <div class="Info">
+          <a href="">О проекте</a> / 
+          <a href="">Реклама</a>
+          <a href="">Частые вопросы</a>
+      </div>
+      
+      
+    </div><!-- / Sidebar-->
+    
+    <div class="Iinner_cont2">
+      <div class="Infopanel">
+        <div class="UrlHouse">
+            Квартплата. Статьи о расчете и начислении квартплаты
+        </div>
+      </div>
+      <!-- /Infopanel -->
+
+
+      <div class="HDmain">Рейтинг экспертов</div>
+      <select>
+          <option value="1">По дате</option>
+          <option value="2">По алфавиту</option>
+      </select>
+
+      <div class="tagcloud tagcloud2">
+          <a href="/tag_publication.asp?tag_id=0" style="font-size:8pt;" alt="Все проиндексированные публикации" title="Все проиндексированные публикации">Все публикации</a> &nbsp; <a href="/tag_publication.asp?tag_id=7448" style="font-size: 12pt;" alt="Оформление документов по квартире. Документы для регистрации прав." title="Оформление документов по квартире. Документы для регистрации прав.">Документы</a> &nbsp; <a href="/tag_publication.asp?tag_id=7464" style="font-size: 13pt;" alt="Жилищные законы. Особенности жилищного законодательства в России." title="Жилищные законы. Особенности жилищного законодательства в России.">Жилищные законы</a> &nbsp; <a href="/tag_publication.asp?tag_id=7357" style="font-size: 11pt;" alt="Застройщики Москвы и России. Квартиры от застройщиков." title="Застройщики Москвы и России. Квартиры от застройщиков.">Застройщики</a> &nbsp; <a href="/tag_publication.asp?tag_id=7359" style="font-size: 12pt;" alt="Капитальный ремонт домов. Капремонт в Москве и России." title="Капитальный ремонт домов. Капремонт в Москве и России.">Капремонт</a> &nbsp; <a href="/tag_publication.asp?tag_id=7360" style="font-size: 19pt;" alt="Квартплата. Статьи о расчете и начислении квартплаты." title="Квартплата. Статьи о расчете и начислении квартплаты." class="active">Квартплата</a> &nbsp; <a href="/tag_publication.asp?tag_id=7519" style="font-size: 10pt;" alt="" title="">Консультации</a> &nbsp; <a href="/tag_publication.asp?tag_id=7465" style="font-size: 12pt;" alt="Конфликты" title="Конфликты">Конфликты</a> &nbsp; <a href="/tag_publication.asp?tag_id=7361" style="font-size: 12pt;" alt="Нежилые помещения. Отношения с собственниками и арендаторами нежилых помещений." title="Нежилые помещения. Отношения с собственниками и арендаторами нежилых помещений.">Нежилые помещения</a> &nbsp; <a href="/tag_publication.asp?tag_id=24935" style="font-size: 14pt;" alt="Вопросы общего имущества многоквартирного дома." title="Вопросы общего имущества многоквартирного дома.">Общее имущество</a> &nbsp; <a href="/tag_publication.asp?tag_id=24931" style="font-size: 10pt;" alt="Все о перерасчете по услугам населению." title="Все о перерасчете по услугам населению.">Перерасчет</a> &nbsp; <a href="/tag_publication.asp?tag_id=7365" style="font-size: 15pt;" alt="Председатель ТСЖ. Полномочия и обязанности председателя товарищества собственников жилья." title="Председатель ТСЖ. Полномочия и обязанности председателя товарищества собственников жилья.">Председатель ТСЖ</a> &nbsp; <a href="/tag_publication.asp?tag_id=7367" style="font-size: 22pt;" alt="Собственники жилья. Решения собственников жилья." title="Собственники жилья. Решения собственников жилья.">Собственники</a> &nbsp; <a href="/tag_publication.asp?tag_id=15221" style="font-size: 11pt;" alt="Создание ТСЖ. Оформление документов при создании и регистрации ТСЖ" title="Создание ТСЖ. Оформление документов при создании и регистрации ТСЖ">Создание ТСЖ</a> &nbsp; <a href="/tag_publication.asp?tag_id=7368" style="font-size: 11pt;" alt="Управляющий домом, бухгалтер ТСЖ, консьерж. О сотрудниках ТСЖ и управляющей компании." title="Управляющий домом, бухгалтер ТСЖ, консьерж. О сотрудниках ТСЖ и управляющей компании.">Сотрудники ТСЖ</a> &nbsp; <a href="/tag_publication.asp?tag_id=14744" style="font-size: 13pt;" alt="Счетчики электроэнергии, газа, водосчетчики" title="Счетчики электроэнергии, газа, водосчетчики">Счетчики</a> &nbsp; <a href="/tag_publication.asp?tag_id=7371" style="font-size: 17pt;" alt="Коммунальные тарифы в ЖКХ. Электроэнергия, расчет тарифов ЖКХ" title="Коммунальные тарифы в ЖКХ. Электроэнергия, расчет тарифов ЖКХ">Тарифы ЖКХ</a> &nbsp; <a href="/tag_publication.asp?tag_id=19537" style="font-size: 13pt;" alt="Тепло и отопление. Публикации про организацию отопления и передачу тепла." title="Тепло и отопление. Публикации про организацию отопления и передачу тепла.">Тепло</a> &nbsp; <a href="/tag_publication.asp?tag_id=7370" style="font-size: 18pt;" alt="Управляющая компания в ЖКХ и недвижимости. Управляющие компании и ТСЖ." title="Управляющая компания в ЖКХ и недвижимости. Управляющие компании и ТСЖ.">Управляющая компания</a> &nbsp; <a href="/tag_publication.asp?tag_id=7372" style="font-size: 15pt;" alt="Хозяйственная деятельность
+" title="Хозяйственная деятельность
+">Хоз. деятельность</a> &nbsp; <a href="/tag_publication.asp?tag_id=7373" style="font-size: 17pt;" alt="Эксплуатация зданий. Ввод зданий в эксплуатацию. Управление и эксплуатация недвижимости." title="Эксплуатация зданий. Ввод зданий в эксплуатацию. Управление и эксплуатация недвижимости.">Эксплуатация зданий</a> 
+      </div>
+
+      <div class="link-rubrik">
+        <a href="">Задать вопрос</a> |
+        <a href="">Ответить на вопрос</a> |
+        <a href="">Все ответы</a>
+      </div>
+
+      <div class="AnswerRubrik">
+        
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        <div class="AnswerRub-Item">
+          <div class="wraptop">
+            <div class="titl"><a href="">	
+                Зачет пластикового окна в муниципальной квартире за коммунальные услуги</a></div>
+            <div class="date">04.11.2016</div>
+          </div>
+          <div class="txt">
+              И ТСЖ, и УО управляют домом, следовательно, по большому счету, они равны в правах и обязанностях.
+              Т.е. если УО включает взнос на кап. ремонт в общую платежку А это происходит сплошь и рядом, и ни у кого вопросов не возникает, то и ТСЖ может делать это...
+          </div>
+          <div class="rubtag">
+              Рубрики: <a href="">Квартплата</a>, <a href="">Правление
+                </a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="Forum-bottom">
+          <div class="Viewteam-info mb15">
+              <b>Всего публикаций: 670,</b> страница <b>1</b> из <b>34</b>
+          </div>
+          <div class="Pagenav mb15">
+              <a href="" class="Pagenav-first">Первая</a> 
+              <span><<</span> 
+              <b>1</b> |
+              <a href="">2</a>|
+              <a href="">4</a>|
+              <a href="">5</a>|
+              <a href="">6</a>|
+              <a href="">7</a>|
+              <a href="">3</a>|
+              <a href="">8</a>|
+              <a href="">9</a>|
+              <a href="">10</a>|
+              <a href="">11</a> 
+              <a href="">>></a> 
+              <a href="" class="Pagenav-last">Последняя</a>
+          </div>
+        </div>
+
+
+    </div> 
+
+  </div>  
+
+  
+  <div class="Footer ">
+    <div class="container">
+      <div class="Logofoot">
+        <img src="images/logo-gold.png" alt="">
+      </div>
+      <div class="txt">
+        <span>+18.</span> Цитирование материалов - только со ссылкой на www.tsj.ru © 2003-2017. <span>E-Mail: info@tsj.ru,
+          reklama@tsj.ru</span> <br />
+        <a href=""> Регламент сайта www.tsj.ru.</a> Редакция не несет ответственности за высказывания участников cообщества на
+        всех страницах сайта.<br />
+        <a href="">Реклама на сайте.</a> Рекламная служба: +7(495) 798-46-99
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  
+
+
+</div><!-- /Main-->
+
+
+
+<!-- JS -->
+
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
